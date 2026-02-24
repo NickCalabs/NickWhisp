@@ -1,0 +1,11 @@
+services:
+  whisp:
+    build: .
+    ports:
+      - "${PORT:-8787}:8787"
+    environment:
+      - API_KEY=${API_KEY}
+      - WHISPER_SERVER_URL=${WHISPER_SERVER_URL:-http://192.168.1.250:8788}
+    tmpfs:
+      - /tmp/whisp:size=2G
+    restart: unless-stopped

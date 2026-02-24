@@ -1,0 +1,12 @@
+.env
+.env.example
+.git
+.gitignore
+.dockerignore
+README.md
+setup-whisper-server.sh
+*.wav
+*.mp3
+*.m4a
+.DS_Store
+__pycache__/
