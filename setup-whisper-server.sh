@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Whisp — whisper-server setup for Framework (bare-metal)
-# Run this on your AI compute machine (e.g. Framework "tata" at 192.168.1.250)
+# Whisp — whisper-server setup (bare-metal)
+# Run this on your AI compute machine (the node that will handle transcription)
 
 WHISPER_TAG="v1.7.3"
 MODEL="medium.en"

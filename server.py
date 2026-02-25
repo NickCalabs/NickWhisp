@@ -10,7 +10,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 API_KEY = os.environ.get("API_KEY", "")
-WHISPER_SERVER_URL = os.environ.get("WHISPER_SERVER_URL", "http://192.168.1.250:8788")
+WHISPER_SERVER_URL = os.environ.get("WHISPER_SERVER_URL", "")
 TEMP_DIR = "/tmp/whisp"
 
 os.makedirs(TEMP_DIR, exist_ok=True)
